@@ -1,0 +1,19 @@
+.header {
+    background-color: #AEA8D3;
+    align-content: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.textbox {
+    border-radius: 15px;
+    border: circle;
+    border:1px solid #456879;
+    height: 25px;
+}
+
+ul li{
+     list-style-type: none;
+     display: inline;
+     margin: 10px 0 0 15px;
+    background-color: aliceblue;
+}

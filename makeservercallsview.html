@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <script src="angular.min.js"></script>
+    <script src="makeserverapp.js"></script>
+     <link href="filtersstyle.css" type="text/css" rel="stylesheet" />
+<body>
+    <div ng-app="serverapp" ng-controller="serverCtrl">
+<!--
+    <ul >
+        <li class="list" ng-repeat="x in serverdata"> {{ x.country + 's capital is ' + x.capital}}
+        </li></ul>
+-->
+        <p> select country from the dropdown to see its captial</p>
+        <select ng-model="selectedCountry" ng-options="c as c.country for c in serverdata">
+        </select>
+        <p> {{ "capital for " + selectedCountry.country + " is " + selectedCountry.capital}}</p>
+    </div>
+    </body>
+</html>
